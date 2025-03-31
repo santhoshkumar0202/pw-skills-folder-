@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> double clickk</title>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: aqua;
+}
+h1{
+    margin-top: 50px;
+    padding: 5px;
+}
+h2{
+    margin-top: 50px;
+    margin-left: 150px;
+    padding: 5px;
+}
+
+</style>
+
+</head>
+<body>
+    <h1>visualize the effect here</h1>
+    <h2 class="clic"></h2>
+
+    <script>
+        let click =document.querySelector(".clic")
+        console.log(click)
+
+        document.addEventListener("dblclick",()=>{
+           click.innerText="you have double clicked !"
+        })
+    </script>
+</body>
+</html>

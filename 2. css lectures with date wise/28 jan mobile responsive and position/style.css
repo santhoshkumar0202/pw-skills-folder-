@@ -1,0 +1,33 @@
+body{
+    background-color: red;
+}
+div{
+    text-align: center;
+    font-size: x-large;
+}
+div::after{
+    content: "welcome to media query";
+}
+
+@media (max-width:600px){
+    body{
+        background-color:rgb(233, 18, 169);
+    }
+    div::after{
+        content: "smaller one";
+   }
+}
+//we can use this syntax also @@media(min-width:700px) and (max-width:1000px) before runniing this please clear wise other some part will not execute
+@media (700px <=width <=1000px){
+    body{
+        background-color:blue;
+    }
+    div::after{
+        content: "woah it is super responsive";
+   }
+}
+
+
+
+
+

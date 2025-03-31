@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colo assignment</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            cursor: pointer;
+            padding: 5px;
+            font-size: 20px;
+            background-color: #0808;
+            border-radius: 10px 5px 10px;
+            box-shadow: 10px 10px 20px  ;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="button">click to change</button>
+    <script>
+
+        /*logic 
+        1. # is constant and xommon for every hex code in the begining
+        2. #+values=123456789ABCDEF
+        3. will take ietration to loop for 6 times and store it to const 
+        3.1. will be using math.random func  through value or randomnum random value  * 16(value count or lenth) after that we will converting into floor value with math.floor()
+        4. the we concat both const and value and then retun the con value
+        5.pass this functiom in colo change fun for bcg
+        6. un last we will be targeting the button to add events listenter to button and pass the color change fun to btn and pass the  colo chnage func to add events mathod
+         let btn = document.getElementById("button")
+        //btn.addEventListener("click",colorchange)
+         ran="31616"*/
+       
+       
+        btn=document.getElementById("button")
+        let randomcolor =() =>{
+            let con="#"
+            var randomnum="0123456789ABCDEF"
+
+            for(i=0;i < 6 ;i++){
+            con=con+randomnum[Math.floor(Math.random()*16)]
+            }
+            return con;
+        }
+
+       function colorchange(){
+            document.body.style.backgroundColor=randomcolor()
+        }
+
+        btn.addEventListener("click",colorchange)
+        
+    </script>
+    
+</body>
+</html>

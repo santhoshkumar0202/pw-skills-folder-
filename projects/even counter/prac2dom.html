@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>the</li>
+    </ul>
+  <script>
+//create element
+    let title=document.createElement("h1")
+    title.className="title"
+    console.log(title)
+    title.textContent="pwskills"
+    document.body.appendChild(title)
+    //remove element
+let ul=document.querySelector("ul")
+
+let lists= document.querySelectorAll("li")
+
+for(list of lists){
+   ul.removeChild(list)
+}
+  </script>
+</body>
+</html>

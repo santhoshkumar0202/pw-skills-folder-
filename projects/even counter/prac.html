@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ID -->
+    <p id="pan">panmasala</p>
+    <!-- classes -->
+    <ul>
+        <li class="tech">one</li>
+        <li class="tech">two</li>
+        <li class="tech">three</li>
+    </ul>
+    <!-- tag nam -->
+    <h2>bhai</h2>
+    <h2 class="hel">namaste</h2>
+    <h2 id="num">hola</h2>
+   <!-- query selector -->
+    <h3>bhai</h3>
+    <h3 class="hel">namaste</h3>
+    <h3 id="num">hola</h3>
+  <script>
+    let pan= document.getElementById("pan")
+    console.log(pan.innerText);
+
+    //classes
+
+    let tech=document.getElementsByClassName("tech")
+    console.log(tech)
+    console.log(tech[2].innerText)
+    tech[1].innerHTML="node js"
+
+    //tagname
+    let tagnames=document.getElementsByTagName("h2")    
+    console.log(tagnames[1])
+    tagnames[1].style.color="red"
+    //queryselector
+    let qs =document.querySelector(".hel")
+      console.log(qs)
+    
+    qs.className="bello"
+    console.log(qs)
+    qs.classList="sfd ram";
+    qs.setAttribute("title","pw skills")
+    
+  </script>
+</body>
+</html>

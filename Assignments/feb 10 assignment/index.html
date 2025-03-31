@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive introduction page</title>
+    <!-- styling for html -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+            color: white;
+            background-color:#111827 ;
+
+        }
+        nav{
+            margin: 20px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: right;
+            flex-direction: row;
+            align-content: center;
+            gap: 20px;
+        }
+        nav ul li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+        }
+        .home{
+            background-color: rebeccapurple;
+            width: 70px;
+            border-radius: 60px;
+            padding: 10px;
+        }
+        /*hover effect for Home otion*/
+        .home:hover{
+            border-radius: 5px;
+            font-weight: 600;
+            background-color: rgb(146, 74, 219);
+           
+          transition: 250ms;
+
+
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        img[alt="menu"]{
+            width: 20px;
+            display: none;
+        }
+        /*defining the flex layout for introduction section*/
+        .intro{
+            display: flex;
+            margin: 30px;
+            max-width: 100vw;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .intro-left{
+            display: flex;
+        }
+        img[alt="wave"]{
+            height: 45px;
+        }
+        img[alt="pc"]{
+            width: 30vw;
+        }
+        img[alt="project"]{
+            width: 20vw;
+        }
+        .line1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size:30px ;
+            gap: 10px;
+        }
+        .line2{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .line2 h1{
+            font-size: 60px;
+        }
+        .line2 h2{
+            font-size: 35px;
+            color: yellow;
+        }
+        /*implementing flex lay out system */
+        .projects{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .projects-list{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        img[alt="social"]{
+            height: 35px;
+            width: 35px;
+           
+        }
+        .contact ul li{
+            list-style: none;
+            height: 25px;
+            width: 25px;
+        
+        }
+         /*added basic trasition for social media items*/
+        img[alt="social"]:hover{
+        height:40px;
+        width:40px;
+       }
+
+       
+        .contact div h1{
+            font-size: 40px;
+        }
+        .contact{
+            display: flex;
+            margin: 50px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px ;
+        }
+        .contact ul{
+            display: flex;
+          
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+        /*divider for under line purpose*/
+        .divider{
+            height: 10px;
+            width: 200px;
+            border-radius: 20px;
+            background-color: blue;
+            margin-bottom: 15px;
+        }
+        .projects div h1{
+            font-size: 40px;
+        }
+        .horizontal{ height: 10px;
+            width: 140px;
+            border-radius: 20px;
+            background-color: blue;
+            margin-bottom: 15px;
+
+        }
+      /*media query is here for responsive page*/
+        @media screen and (max-width:576px){
+            nav ul{
+                display: none;
+
+            }
+            img[alt="menu"]{
+                display: block;
+            }
+            .intro{
+                display: flex;
+                flex-direction: column;
+            }
+            img[alt="pc"]{
+                width: 60vw;
+            }
+         .line1{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+         }
+         .line2 h1{
+            font-size: 40px;
+         }
+         .line2 h2{
+            font-size: 25px;
+            text-align: center;
+         }
+         .projects-list{
+            display: grid;
+            grid-template-columns: 1fr ;
+            align-items: center;
+            justify-content: center;
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        img[alt="project"]{
+            width: 50vw;
+        }
+        .projects div h1{
+            font-size: 35px;
+        }
+        .contact div h1{
+            font-size: 35px;
+        }
+        .horizontal{ height: 6px;
+            width: 120px;
+            border-radius: 20px;
+            background-color: blue;
+            margin-bottom: 15px;
+
+        }
+        .divider{
+            height: 7px;
+            width: 180px;
+            border-radius: 20px;
+            background-color: blue;
+            margin-bottom: 10px;
+            
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- header section -->
+    
+    <header>
+        <nav>
+            <!-- list of option in nav bar -->
+            <ul>
+                <li class="home">Home</li>
+                <li>Projects</li>
+                <li>Technologies</li>
+                <li>contacts</li>
+            </ul>
+            <!-- picture of menu -->
+            <div><img src="./assets/hambrger.png" alt="menu"></div>
+
+        </nav>
+        <!-- he we have two parts one is left side and another one is right side -->
+        <!-- which left div consist of 2sub div which is line one and line 2 -->
+        <!-- part 2 is picture of pc -->
+        <section class="intro">
+            <div class="left-side">
+                <div class="line1">
+                    <img src="./assets/waving-hand.png" alt="wave">
+                    <h3>Hi Everyone</h3>
+                </div>
+                <div class="line2">
+                    <h1>Mark Anderson</h1>
+                    <h2>Developer</h2>
+                </div>
+
+
+            </div>
+            <div class="right-side">
+                <img src="./assets/pc-image.png" alt="pc">
+            </div>
+        </section>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- this section is all about projects and images of projects -->
+        <section class="projects">
+            <div>
+            <h1>Projects</h1>
+            <div class="horizontal"></div>
+            </div>
+            <div class="projects-list">
+            <div class="projects"><img src="./assets/image.png" alt="project">
+            <p>project 1</p></div>
+            <div class="projects"><img src="./assets/image.png" alt="project">
+                <p>project 2</p></div>
+        
+            <div class="projects"><img src="./assets/image.png" alt="project">
+                <p>project 3</p></div>
+        
+            <div class="projects"><img src="./assets/image.png" alt="project">
+                <p>project 4</p></div>
+        </div>
+</div>            
+        </section>
+
+    </main>
+    <!-- footer -->
+    <footer>
+        <!-- footer consist or say about conytact details -->
+        <section class="contact">
+            <div>
+        <h1>Contact Me</h1>
+        <div class="divider"></div>
+        </div>
+        <div class="social media">
+            <!-- social list whcih show the available ways to reach them out -->
+            <ul class="social">
+                <li><img src="./assets/github.png" alt="social"></li>
+                <li><img src="./assets/linkedin.png" alt="social"></li>
+                <li><img src="./assets/outlook.png" alt="social"></li>
+            </ul>
+        </div>
+        </section>
+    </footer>
+</body>
+</html>

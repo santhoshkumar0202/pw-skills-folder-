@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  
+  .container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 119px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 69px;
+  }
+  
+  .grow-list {
+    flex-grow: 1;
+    padding-left: 62px;
+  }
+  .list{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    list-style: none;
+    
+  }
+   li:hover {
+    color: rgb(83, 83, 202);
+    font-weight: 600;
+
+  }
+  li{
+    cursor: pointer;
+  }
+div .nav-button{
+   background-color: rgb(57, 94, 240);
+   padding: 15px;
+   width: 180px;
+   line-height: 30px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.nav-button:hover{
+    background-color: aquamarine;
+}
+ 
+  .banner-container{
+    display: flex;
+    align-items: center;
+    margin-top: 66px;
+    
+  }
+  .heading-text{
+    color: rgb(39, 39, 104);
+    font-style: normal;
+    font-family: "Poppins";
+    font-size: 64px;
+    font-weight: 600;
+    line-height:74px ;
+  }
+  span{
+    color: rgb(41, 127, 231);
+  }
+  .description{
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 28px;
+    color: #b1afaf;
+}
+  .btn{
+    margin-top: 72px;
+    transition: width 2s, height 2s;
+  }
+  .btn:hover{
+    background-color: skyblue;
+    width: 200px;
+    height: 90px;
+    transition-timing-function: ease-in-out
+   
+
+  }
+  
+ 

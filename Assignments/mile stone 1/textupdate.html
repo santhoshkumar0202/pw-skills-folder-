@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Heading Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head">The most affordable learning platform</h1>
+    <button id="Button">Toggle Text</button>
+
+    <script>
+        const heading = document.getElementById('head');
+        const toggleButton = document.getElementById('Button');
+        let hello=["hello","thankyou"]
+        
+
+        toggleButton.addEventListener('click', () => {
+            if (head.textContent === 'The most affordable learning platform') {
+                head.textContent = hello//'PW Skills';
+            } else {
+                heading.textContent = 'The most affordable learning platform';
+            }
+        });
+    </script>
+</body>
+</html>

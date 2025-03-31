@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .cont{
+            display: grid;
+             height: 700px;
+            grid-template-columns:repeat(3, 1fr);
+           /* grid-template-rows: 100px 2000px 250px ;*/
+          /* grid-template-columns: minmax(100px, 1fr)  minmax(100px, 1fr)  minmax(100px, 1fr);
+           grid-template-rows: repeat(3,50px);*/
+           /*gap: 10px; */
+          /* border: 1px solid red;
+          justify-items: center;
+           align-items: center;*/
+
+        }
+        .box{
+          /* height: 100px;
+            width: 100px;
+            border: solid black;*/
+        }
+        .box1{
+            background-color: aqua;
+        }
+        .box2{
+            background-color: rgb(1, 13, 13);
+            color: aqua;
+          /*  justify-self: center;*/
+            
+        }
+        .box3{
+            background-color: rgb(193, 10, 10);
+        }
+        .box4{
+            background-color: rgb(55, 0, 255);
+            /*align-self: center;*/
+        }
+        .box5{
+            background-color: rgb(225, 255, 0);
+            grid-column-start:1 ;
+            grid-column-end: 4;
+        }
+        .box6{
+            background-color: rgb(8, 231, 30);
+        }
+        .box7{
+            background-color: rgb(242, 6, 168);
+        }
+        .box8{
+            background-color: grey;
+        }
+        .box9{
+            background-color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box box1">aqua</div>
+        <div class="box box2">black</div>
+        <div class="box box3">red</div>
+        <div class="box box4">blue</div>
+        <div class="box box5">yellow</div>
+        <div class="box box6">green</div>
+        <div class="box box7">pink</div>
+        <div class="box box8">grey</div>
+        <div class="box box9">marooon </div>
+    </div>
+    
+</body>
+</html>

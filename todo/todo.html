@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive To-Do List</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    #todo-list { margin-top: 20px; }
+    li { padding: 5px; }
+    button { padding: 5px 10px; background-color: #28a745; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h1>To-Do List</h1>
+  
+  <input type="text" id="todo-input" placeholder="Add a new task" />
+  <button onclick="addTodo()">Add Task</button>
+
+  <ul id="todo-list">
+    <!-- Dynamic list items will appear here -->
+  </ul>
+
+  <!-- <script src="app.js"></script> -->
+</body>
+
+<script>
+    // app.js
+function addTodo() {
+    // Get the input value
+    let todoInput = document.getElementById("todo-input");
+    let todoText = todoInput.value;
+  
+    // If input is not empty, add the task to the list
+    if (todoText !== "") {
+      let li = document.createElement("li");  // Create a new list item
+      li.textContent = todoText;  // Set the text of the list item
+  
+      // Create a delete button
+      let deleteBtn = document.createElement("button");
+      deleteBtn.textContent = "Delete";
+      deleteBtn.onclick = function() {
+        li.remove();  // Remove the task when clicked
+      };
+  
+      // Append the delete button to the list item
+      li.appendChild(deleteBtn);
+  
+      // Append the list item to the to-do list
+      document.getElementById("todo-list").appendChild(li);
+  
+      // Clear the input field
+      todoInput.value = "";
+    } else {
+      alert("Please enter a task!");
+    }
+  }
+  
+</script>
+</html>

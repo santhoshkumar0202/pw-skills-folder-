@@ -1,0 +1,45 @@
+@media (max-width:600px){
+body{
+    background-color: red;
+}
+div::after{
+    content: "small screens";
+}
+}
+/*we can use the range aswell like (600 <= width <= 768px)*/
+@media (min-width:600px){
+body{
+    background-color: rgb(224, 211, 211);
+}
+div::after{
+    content: "latest mobiles and potrait tablets";
+}
+}
+@media (min-width:768px){
+body{
+    background-color: burlywood;
+}
+div::after{
+    content: "Tablets";
+}
+}
+@media (min-width:992px){
+body{
+    background-color: rgb(45, 58, 64);
+}
+div::after{
+    content: "laptops and tablers";
+}
+}
+@media (min-width:1200px){
+body{
+    background-color: rgb(97, 99, 9);
+}
+div::after{
+    content: "desktops and larger screen tablets";
+}
+}
+div{
+    text-align: center;
+    font-size: x-large;
+}

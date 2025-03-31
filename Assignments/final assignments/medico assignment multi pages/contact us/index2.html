@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+            font-family: "IBM Plex Sans", sans-serif;
+
+          }
+          /*desgining the body*/
+          body {
+            max-width: 1440px;
+            background-color: #f0f4f5;
+            overflow: hidden;
+            margin: auto;
+          }
+          
+          /* designing the navigation */
+          nav {
+            height: 15vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 12%;
+          }
+          
+          /* designing the logo img */
+          nav img {
+            width: 150px;
+            scale: 0.8;
+          }
+          
+          /* desiging the navigation links */
+          nav ul {
+            display: flex;
+            align-items: center;
+          }
+          
+          nav ul li {
+            list-style: none;
+            margin-right: 50px;
+            font-weight: 600;
+          }
+          
+          nav ul li:first-child a {
+            font-weight: 700;
+            color: #20bc7e;
+          }
+          /*making a elemnts no decoration and text is black*/
+          
+          a {
+            text-decoration: none;
+            color: black;
+          }
+          /*desiging main */
+          main{
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          /*desiging forms in such way that looks cool and eye feasting*/
+          form{
+           
+            height: 360px;
+            width: 250px;
+            display: flex;
+            box-shadow: 0 0 10px black;
+            flex-direction: column;
+            gap: 15px;
+            border-radius: 10px;
+            padding: 15px;
+          }
+          /*structuring the alignment*/
+          form div{
+            display: flex;
+            flex-direction: column;
+           
+          }
+          /*desiging h1*/
+          form h1{
+            font-size: 25px;
+            text-align: center;
+            font-weight: 700;
+          }
+          div label{
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+          /*appying css for div input*/
+          div input{
+            border: transparent;
+            border-radius: 10px;
+            padding: 5px 10px;
+          }
+          /*text area*/
+          div textarea{
+            border-radius: 5px;
+            height: 80px;
+            resize: none;
+            padding: 5px 10px;
+          }
+          /*desiging button*/
+          button{
+            border: transparent;
+            background: #20BC7E;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: bold;
+          }
+
+        
+    </style>
+    <!-- fonts and family links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+<body>
+    <nav>
+      <!-- logo -->
+        <img src="../images/logo.png" alt="">
+        <!-- nav right section -->
+        <div class="nav-right">
+          <!-- links for multiple pages -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about us/index.html">About Us</a></li>
+                <li><a href="../contact us/index2.html">Contact Us</a></li>
+                
+            </ul>
+        </div>
+
+    </nav>
+    <!-- main section -->
+    <main>
+        <form action="">
+          <!-- form main logo -->
+            <h1>Contact Form</h1>
+            <div class="name">
+                <label for="">Name</label>
+                <input type="text" placeholder="Type Your Name">
+            </div>
+            <div class="email">
+                <label for="">Email</label>
+                <input type="password" placeholder="email">
+            </div>
+            <!-- element and attributes for messaging -->
+            <div class="msg">
+                <label for="">Message</label>
+                <textarea placeholder="Enter your message"></textarea>
+            </div>
+            <button>Submit</button>
+
+
+        </form>
+    </main>
+    
+</body>
+</html>

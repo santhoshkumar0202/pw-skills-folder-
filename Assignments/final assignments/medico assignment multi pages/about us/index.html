@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <!-- fonts and family links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+        font-family: "IBM Plex Sans", sans-serif;
+
+      }
+      
+      body {
+        max-width: 1440px;
+        background-color: #f0f4f5;
+        overflow: hidden;
+        margin: auto;
+      }
+      
+      /* designing the navigation menu */
+      nav {
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 12%;
+      }
+      
+      /* designing the logo */
+      nav img {
+        width: 150px;
+        scale: 0.8;
+      }
+      
+      /* desiging the navigation menu links */
+      nav ul {
+        display: flex;
+        align-items: center;
+      }
+      /*designing list items*/
+      nav ul li {
+        list-style: none;
+        margin-right: 50px;
+        font-weight: 600;
+      }
+      /*designing the li's 1st element where is a */
+      nav ul li:first-child a {
+        font-weight: 700;
+        color: #20bc7e;
+      }
+      
+      /*desiging the a*/
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      /*designing the main section*/
+  main{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+  }
+  /*appling css on description*/
+  .disc{
+    width: 50%;
+    text-align: center;
+  }
+  /*css for description h1*/
+  .disc h1{
+    margin-bottom: 20px;
+    color: #20BC7E;
+  }
+  .disc p{
+    font-size: 15px;
+    font-weight:500;
+    padding: 0 60px;
+  }
+  /*desiging achievements*/
+  .achi{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+  }
+.achi div{
+    height: 80px;
+    width: 160px;
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+span{
+    color: #20BC7E; 
+    font-weight: 700;
+}
+.achi div p{
+    font-weight: 600;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+      <!-- nav section for header part-->
+        <nav>
+            <img src="../images/logo.png" alt="alt">
+            <div>
+              <!-- ul element for multiple pages links -->
+                <ul>
+
+                    <li><a href="../index.html ">Home</a></li>
+                    <li><a href="../about us/index.html">About Us</a></li>
+                    <li><a href="../contact us/index2.html"> Contact Us</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <!-- main section -->
+    <main>
+      <!-- description part -->
+        <div class="disc">
+            <h1>Best and Experienced Faculties</h1>
+<p> We had bring the best experts of medical field to provide you the best
+    service as possible. We are trying our best to serve the world with
+    our facilities, so that everyone can have a proper medical facility to
+    avail.</p>
+</div>
+<!-- achievements container  consist of child divisions-->
+<div class="achi">
+    <div>
+        <span>20+</span>
+        <p>doctors</p>
+    </div>
+    <div>
+        <span>50,000+</span>
+        <p>customers</p>
+    </div>
+    <div>
+        <span>500+</span>
+        <p>students</p>
+    </div>
+
+
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h2>What you'll learn</h2>
+  <ul id="learnList">
+    <li>Topic 1: Introduction</li>
+    <li>Topic 2: Basic Concepts</li>
+    <li>Topic 3: Advanced Techniques</li>
+    <!-- ... more list items ... -->
+  </ul>
+
+  <button id="addItemButton">Add Next Item</button>
+
+  <script>
+    var learnList = document.getElementById("learnList");
+    var addItemButton = document.getElementById("addItemButton");
+
+    // Pre-existing array of list items
+    var newItemArray = [
+      "Topic 4: Advanced Concepts",
+      "Topic 5: Real-world Applications",
+      "Topic 6: Final Project"
+      // ... more items ...
+    ];
+
+    var currentIndex = 0;
+
+    addItemButton.addEventListener("click", function() {
+      if (currentIndex < newItemArray.length) {
+        var newItem = document.createElement("li");
+        newItem.textContent = newItemArray[currentIndex];
+        learnList.appendChild(newItem);
+        currentIndex++;
+      } else {
+        alert("All items have been added.");
+      }
+    });
+  </script>
+</body>
+</html>

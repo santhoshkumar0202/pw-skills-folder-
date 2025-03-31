@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- id -->
+    <h1 id="parag"> <span>hello</span> namste</h1>
+    <!-- class -->
+    <ul>
+        <li class="tech">one</li>
+        <li class="tech">two</li>
+        <li class="tech">three</li>
+    </ul>
+    <!-- name tag -->
+    <h1>hello</h1>
+    <h1>bye</h1>
+    <h1>hola</h1>
+    <!-- query -->
+    <h2 class="classes2" >king kohli</h2>
+    <h1>bye</h1>
+    <h1 id="ids">hola</h1>
+    <!-- scripting -->
+    <script>
+        //either we can call external js by url or like this we can us inline js
+
+       let parag= document.getElementById("parag")
+       console.log(parag)
+       //class
+       let classs=document.getElementsByClassName("tech");
+       console.log(classs[1]);
+       classs[2].innerText="nodejs"
+      //name tag
+       let name=document.getElementsByTagName("h1");
+       console.log(name[1]);
+       name[1].style.color="red"
+      //query selector
+      let qr=document.querySelector(".classes2");
+      console.log(qr);
+      //qr.className="sam"
+      qr.classList="sam herp bhai"
+      qr.setAttribute("title","pw skills")
+    </script>
+</body>
+</html>

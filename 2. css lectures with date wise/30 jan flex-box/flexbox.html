@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .cont{
+            border: 2px solid red;
+            display: flex;
+           /* flex-direction: column;*/
+          /* flex-direction: column-reverse;*/
+         /* flex-wrap: wrap; it wont shrink as normal flex it puts all together*/
+         /*flex-flow: row wrap ;*/
+         /*justify-content: flex-end ;*/
+       /* justify-content: space-evenly;*/
+        /*align-items: flex-end;*/
+        /*gap: 10px;*/
+         row-gap: 10px;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+        }
+     .box1{
+            background-color: antiquewhite;
+        }
+        .box2{
+            background-color: black;
+            color: aliceblue;
+        }
+        .box3{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<!-- flexbox -->
+<div class="cont">
+<div  class="box box1">box 1</div>
+<div  class="box box2">box 2</div>
+ 
+<div  class="box box3">box 3</div>
+</div>
+
+    
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: black;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: #edf1fd;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        li{
+            list-style: none;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+        }
+        button{
+            background-color: aqua;
+            color: white;
+            padding: 4px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: 700;
+            border: 1px solid white;
+        }
+        button:hover{
+            background-color: #edf1fd;
+            color: rgb(8, 222, 75);
+            border: 1px solid black;
+            font-weight: 900;
+        }
+        header{
+            padding: 14px 0px;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+        }
+        nav .logo{
+            font-weight: 700;
+            font-size: 25px;
+        }
+        nav ul{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-weight: 500;
+           
+        }
+        nav ul li:hover{
+            text-decoration: underline;
+            font-weight: 900;
+
+        }
+        .search{
+            display: flex;
+            gap: 20px;
+        }
+        input{
+            padding: 4px 10px;
+        }
+        .hero{
+            display: flex;
+            align-items: center;
+        }
+        .hero-left{
+            width: 60%;
+            padding: 0px 8%;
+        }
+        .hero-left h1{
+            font-weight: 800;
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+        .hero-left h1 span{
+            color: rgb(18, 155, 155);
+            font-weight: 900;
+            background-color: #dfdfe0;
+            padding: 0 15px;
+        }
+
+        .hero-left p{
+            font-weight: 500;
+            font-size: 20px;
+           
+        }
+        .hero-left p span{
+            color: rgb(18, 155, 155);
+            font-weight: 700;
+            font-size: 30px;
+        }
+        .hero-right{
+            display: flex;
+            flex-direction: column;
+            border-radius: 100px;
+            width: 40%;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        .hero-right img{
+            border-radius: 100px;
+        }
+        .hero-right-btn{
+            display: flex;
+            align-items: center;
+            border-radius: 10%;
+        }
+        footer{
+            font: 300;
+            display: flex;
+            padding: 20px 0;
+            justify-content: space-around;
+        }
+       footer ul{
+            display: flex;
+            align-items: center;
+           gap: 30px;
+        }
+        
+
+        
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Logo</></div>
+            <!-- about -->
+            <ul>
+                <li><a href="http://" alt="_blank">home</a></li>
+                <li><a href="http://"> about</a></li>
+                <li><a href="http://">contact us</a></li>
+                
+            </ul>
+            <!-- seach aarea -->
+            <div class="search">
+                <input type="text" placeholder="search">
+        
+                <button>search</button>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Hello, I Am a <span>Web Deverloper</span> </h1> 
+            <p>im a aspiring <span>full-stack web Deverloper</span> , who is currently working as a <span>free lancer</span>  for <span>national and international clinents</span></p>
+        </div>
+        <!-- right hero -->
+       <div class="hero-right">
+             <img src="https://img.freepik.com/premium-vector/brunette-man-avatar-portrait-young-guy-vector-illustration-face_217290-1035.jpg?w=740" alt="avatar" height="300px" />
+        <div>
+            <button class=".hero-right-btn">chat with me </button>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>copy right @ 2022. all rights are reserved</p>
+        <ul>
+            <li>gitub</li>
+            <li>linkedin</li>
+            <li>insta</li>
+        </ul>
+    </footer>
+</body>
+</html>

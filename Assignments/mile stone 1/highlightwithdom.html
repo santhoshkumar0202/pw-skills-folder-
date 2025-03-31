@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <p id="myParagraph">This is a sample paragraph with words of different lengths.</p>
+
+  <script>
+    // Get the paragraph element
+    var paragraph = document.getElementById("myParagraph");
+
+    // Split the paragraph content into words help of split method
+    var words = paragraph.textContent.split(" ");
+    var highlightedWords = [];
+
+    // Loop through words and add highlighting to words with more than 8 characters
+    for (word of words) {
+      if (word.length > 8) {
+        word = '<span class="highlight">' + word + '</span>';
+    
+    }
+
+      highlightedWords.push(word);
+    }
+
+    // Join the words back into a paragraph
+    paragraph.innerHTML = highlightedWords.join(" ");
+  </script>
+</body>
+</html>

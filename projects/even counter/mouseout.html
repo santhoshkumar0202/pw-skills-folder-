@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> mouse outr</title>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: purple;
+    opacity: 0.8;
+}
+h1{
+    margin-top: 50px;
+    padding: 5px;
+}
+h2{
+    height: 100px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 150px;
+    padding: 5px;
+}
+
+</style>
+
+</head>
+<body>
+    <h1>visualize the effect here</h1>
+    <h2 class="clic"></h2>
+
+    <script>
+        let click =document.querySelector(".clic")
+        console.log(click)
+
+        document.addEventListener("mouseout",()=>{
+           click.innerText="now you are out of the screen -_-!"
+        })
+    </script>
+</body>
+</html>

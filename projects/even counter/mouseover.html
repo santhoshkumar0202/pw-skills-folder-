@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> dmouse over</title>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: pink;
+}
+h1{
+    margin-top: 50px;
+    padding: 5px;
+}
+h2{
+    height: 100px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 150px;
+    padding: 5px;
+}
+
+</style>
+
+</head>
+<body>
+    <h1>visualize the effect here</h1>
+    <h2 class="clic"></h2>
+
+    <script>
+        let click =document.querySelector(".clic")
+        console.log(click)
+
+        document.addEventListener("mouseover",()=>{
+           click.innerText="now you are on the screen !"
+        })
+    </script>
+</body>
+</html>

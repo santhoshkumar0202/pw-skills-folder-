@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello pw skills</h1>
+    <p id="jss"></p>
+    <button id="jsss" onclick="tap()">submit</button>
+
+
+    <script>
+       document.addEventListener("click",hello)
+        function hello(){
+            document.getElementById("jsss").innerText="hi bacho";
+            
+        }
+          function tap(){
+            //can write in two way 
+            //1st way
+            document.getElementById("jsss").innerText="thank you"
+            document.getElementById("jsss").style.color="red"
+            document.getElementById("jsss").style.backgroundColor="black"
+            document.getElementById("jsss").style.padding="25px"
+            document.getElementById("jsss").style.border="2px solid blue"
+                   //or
+            //2ndway
+          /* let tap1 =document.getElementById("jsss")
+           tap1.innerText="thank you for clicking"*/
+          }
+
+    </script>
+    
+</body>
+</html>

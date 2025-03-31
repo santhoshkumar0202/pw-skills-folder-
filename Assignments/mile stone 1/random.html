@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      transition: background-color 0.5s;
+    }
+    button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button id="colorChangeButton">Change Background Color</button>
+
+  <script>
+    var colors = ["#FF5733", "#33FF57", "#5733FF", "#FF33D1", "#33A8FF", "#FFC233"];
+
+    var colorChangeButton = document.getElementById("colorChangeButton");
+
+    colorChangeButton.addEventListener("click", function() {
+      var randomIndex = Math.floor(Math.random() * colors.length);
+      document.body.style.backgroundColor = colors[randomIndex];
+    });
+  </script>
+</body>
+</html>

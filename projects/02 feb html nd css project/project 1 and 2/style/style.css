@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: cornsilk;
+    box-sizing: border-box;
+}
+nav{
+    padding: 20px;
+    height: 15vh ;
+    
+    
+    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-left: 5% ;
+cursor: pointer;
+}
+
+nav ul li{
+    list-style:none ;
+    margin-right:  5%; 
+    font-weight: 600;
+}
+
+nav ul li img{
+    width: 100px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    height: 85%;
+}
+.leftmain{
+    width: 40%;
+}
+.leftmain h1{
+    font-size: 60px;
+}
+.leftmain p{
+    margin: 5% 0;
+}
+.leftmain button{
+    padding: 15px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: green;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.rightmain{
+    width: 60%;
+    padding-left: 7%;
+}
+.rightmain div img{
+    width: 30%;
+    margin: 5px;
+}
+.rightmain section img{
+    width: 62%;
+    margin: 5px;}

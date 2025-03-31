@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    *{
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #errorText {
+      color: red;
+      position: relative;
+      height: 5px;
+      z-index: 1;
+    }
+
+   
+    #loginForm{
+        display: flex;
+        position: relative;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        border: 2px solid black;
+        width: 250px;
+        height: 350px;
+        gap: 10px;
+        padding: 10px;
+        overflow: hidden;
+        background-color: rgb(216, 209, 209);
+        box-shadow: 6px 8px 10px 0;
+    }
+    legend{
+        display: flex;
+        justify-content: center;
+        width: 220px;
+        align-items: center;
+        position: relative;
+        font-weight: 700;
+        font-size: 25px;
+        height: 50px;
+       
+      
+       
+        
+    }
+    label{
+        display: flex;
+        height: 15px;
+        position: relative;
+        z-index: 1;
+      
+        
+        
+       
+    }
+    input{
+        display: flex;
+        height: 28px;
+        width: 220px;
+        justify-content: start;
+        position: relative;
+         box-shadow: 5px 5px 5px 2px;
+       background-color: whitesmoke;
+       border-radius: 5px;
+        
+    }
+    #submitButton{
+        width: 100px;
+        height: 30px;
+    background-color: red;
+    position:relative;
+    left: +60px;
+    border-radius: 5px;
+    border-color: black;
+    border: 3px double;
+
+    }
+  
+    #showpassword{
+      height: 20px;
+      width: 20px;
+      box-shadow: 0px 3px 5px;
+      
+    }
+    div.sho{
+      display: flex;
+      justify-content: space-around;
+      width: 220px;
+      position: relative;
+      top: -20px;
+      height: 10px;
+      gap: 40px;
+    }
+    #successText {
+      color: green;
+      position: absolute;
+     z-index: 0;
+      height: 5px;
+    }
+    div.but{
+      position: relative;
+    }
+    div.txt{
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+    
+  <form id="loginForm">
+    <legend> Login Form</legend>
+    <label for="email">Email:</label> 
+    <input type="text" id="email" name="email" placeholder=" Email" style="color:black;"><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="Password" placeholder=" Password"><br>
+    <div class="sho">
+    <p>show Password</p>
+    <input type="checkbox" id="showpassword" >
+     </div>  
+     <div class="but">
+    <button type="button" id="submitButton" >Submit</button>
+    </div>
+   <div class="txt">
+     
+    <p id="errorText"></p>
+    <!-- <p id="successText"></p> -->
+    </div>
+
+
+</form>
+  
+  
+  <script>
+    var submitButton = document.getElementById("submitButton");
+    var errorText = document.getElementById("errorText");
+    var successText = document.getElementById("successText");
+    var emailInput = document.getElementById("email");
+    var passwordInput = document.getElementById("password");
+    var passcheck=document.getElementById("showpassword")
+    submitButton.addEventListener("click", function() {
+      // Clear previous messages
+      errorText.textContent = " ";
+      //successText.textContent = " ";
+
+      var emailValue = emailInput.value;
+      var passwordValue = passwordInput.value;
+
+      if (emailValue.includes("@") && passwordValue.length >= 8) {
+       errorText.textContent = "Valid email and password!";
+       errorText.style.color="green"
+       
+      } else {
+        errorText.textContent = "Invalid email or password!";
+      }
+     
+      
+    });
+
+    passcheck.addEventListener("change",()=>{
+      if(passcheck.checked){
+        passwordInput.type="text"
+      }
+      else{
+        passwordInput.type="password"
+      }
+    })
+  </script>
+</body>
+</html>
